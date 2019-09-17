@@ -1,0 +1,981 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+}
+
+input {
+    outline: none;
+}
+
+textarea {
+    outline: none;
+}
+
+@font-face {
+    font-family: grotesk; 
+    src: url(../fonts/logo-fon.otf); 
+}
+
+.absolut {
+    position: absolute !important;
+}
+
+.index_header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1.5px solid #EAEAEB;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login_on {
+    display: block;
+}
+
+.drop_top_menu_index_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logined .drop_top_menu_index_block {
+    margin-right: 40px;
+}
+
+.drop_top_menu_index_block img {
+    width: 8px;
+    position: relative;
+    top: 3px;
+}
+
+.user_block {
+    display: none;
+    font-weight: bold;
+    color: #333333;
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    top: 2px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.logined .user_block {
+    display: block;
+}
+
+
+
+.left_menu_header { 
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logotyp {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotyp a {
+    font-size: 36px;
+    font-family: grotesk;  
+    color: black;
+}
+
+.logotyp a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.add_podcast_buttons {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sign_in {
+    font-weight: bold;
+    color: #333333;
+    font-size: 14px;
+    margin-right: 40px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    top: 2px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.button_inf_block span:hover {
+    border-bottom-color: #333333;
+}
+
+.button_inf_block {
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+
+.button_inf_block span {
+    font-weight: bold;
+    color: #333333;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    top: 2px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.button_add_podcast {
+    width: 200px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    line-height: 4;
+}
+
+.button_for_drop_left_menu {
+    width: 25px;
+    height: 20px;
+    background-color: transparent;
+    margin-left: 48px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn_span_lm_menu {
+    width: 25px;
+    background-color: black;
+    height: 3.7px;
+    display: block;
+    transition: all 0.5s;
+}
+
+.top_lm {
+    position: absolute;
+    top: 0;
+}
+
+.bottom_lm {
+    position: absolute;
+    bottom: 0;
+}
+
+.body_page {
+    padding: 0 50px 0 50px;
+}
+
+.block_categories {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.categories_button {
+    width: 120px;
+    border-radius: 4px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 15px;
+    border: 1.5px solid #EAEAEB;
+    font-weight: bold;
+}
+
+.head_btn_categories {
+    background-color: #E63737;
+    border: 0;
+}
+
+.head_btn_categories span {
+    color: white;
+    font-size: 14px;
+}
+
+.categories_button:first-child {
+    margin-left: 0;
+}
+
+.live_podcasts_block {
+    width: 100%;
+}
+
+.info_blocks_index {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head_text_inf_block h1{
+    padding: 0;
+    margin: 0;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.head_text_inf_block span{
+    font-size: 15px;
+}
+
+.live_podcasts {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.mini_block_podcast {
+    width: 80px;
+    height: 80px;
+    display: block;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.mini_block_podcast:first-child {
+    margin-left: 0;
+}
+
+.mini_block_podcast img {
+    height: 100%;
+}
+
+.logined .sign_in {
+    display: none;
+}
+
+.logined_box {
+    z-index: 1000;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_login_box {
+    width: 840px;
+    height: 620px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.black_bg_reg_block {
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.5);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;;   
+}
+
+.mini_h1 {
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.close_login_box {
+    display: none;
+}
+
+.window_toggle_create_podcast {
+    width: 900px;
+    height: 600px;
+    border-radius: 25px;
+    background-color: #FBFBFB;
+    z-index: 1000;
+}
+
+.txt_wtcp {
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.txt_wtcp_v2 {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.txt_wtcp_v2 h1{
+    font-size: 25px;
+    padding-top: 20px;
+}
+
+.txt_wtcp_v2 span{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.txt_wtcp h1 {
+    font-size: 25px;
+}
+
+.two_buttons_wtcp {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+}
+
+.twp_wcp_btn {
+    width: 380px;
+    height: 290px;
+    border: 1.5px solid #F2F2F2;
+    border-radius: 35px;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+}
+
+.twp_wcp_btn span {
+    position: relative;
+    top: 300px;
+    font-weight: bold;
+    font-size: 17px;    
+    color: #3C3C3C;
+}
+
+.window_create_air_podcast {
+    width: 1100px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #FBFBFB;
+    z-index: 1000;
+    padding: 0 30px 0 30px;
+}
+
+.block_head_creating_air_podcast {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.add_img_redacting_air_podcast {
+    min-width: 335px;
+    height: 340px;
+    border-radius: 10px;
+    border: 1.5px solid #E2E2E2;
+    background-color: #EFEFEF;
+}
+
+.socila_block_registration {
+    height: 620px;
+    width: 920px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.first_block_social_block_reg,
+.second_block_social_block_reg {
+    height: 100%;
+    width: 43%; 
+}
+
+.third_block_social_block_reg {
+    width: 90px;
+    height: 620px;
+    position: relative;
+    right: -20px;
+    border-left: 1.5px solid #E6E6E6;
+}
+
+.first_block_social_block_reg {
+    text-align: center;
+}
+
+.img_socail_block {
+    width: 100%;
+    height: 90%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-image: url(/assets/img/Artboard__3.png);
+    background-size: cover;
+}
+
+.img_socail_block_1 {
+    width: 100%;
+    height: 90%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-image: url(/assets/img/Artboard__2.png);
+    background-size: cover;
+}
+
+.scblock_text {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.span_sign_in {
+    color: #2949f0d1;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.in_second_block_scblreg {
+    width: 100%;
+    height: 100%;
+}
+
+.second_block_social_block_reg {
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
+}
+
+.txt_scl_block {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.txt_scl_block h1 {
+    font-size: 29px;
+}
+
+.txt_scl_block span {
+    font-size: 14px;
+}
+
+.social_login_on_bauttons {
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+    border: 1.5px solid #F2F2F2;
+    background-color: white;
+    margin-bottom: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-size: 27px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 25px;
+}
+
+.social_login_on_bauttons span{
+    margin-left: 90px;
+    font-size: 14px;
+    color: #2A2A2A;
+}
+
+.social_login_on_bauttons:hover {
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.05);
+}
+
+.vk_login_on_btn {
+    background-image: url(/assets/img/vk.png);
+}
+
+.google_login_on_btn {
+    background-image: url(/assets/img/search.png);
+}
+
+.facebook_login_on_btn {
+    background-image: url(/assets/img/facebook.png);
+}
+
+.twitter_login_on_btn {
+    background-image: url(/assets/img/twitter.png);
+}
+
+.ok_login_on_btn {
+    background-image: url(/assets/img/odnoklassniki.png);
+}
+
+.linkedin_login_on_btn {
+    background-image: url(/assets/img/linkedin.png);
+}
+
+.box_btn_open_login_block_blue {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.btn_open_login_block_blue {
+    width: 100%;
+    height: 55px;
+    color: white;
+    background-color: #2949F0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cheack_box_with_btn_social_reg {
+    display: flex;
+}
+
+.second_block_social_block_reg input {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1.5px solid #F2F2F2;
+    background-color: white !important;
+    margin-bottom: 8px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.button_add_podcast img {
+    height: 35%;
+    position: relative;
+    left: -20px;
+}
+
+.left_drop_menu_page {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: -100vw;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+.open_left_menu .left_drop_menu_page{
+    left: 0;
+}
+
+.mini_height_block_left_menu {
+    height: 100%;
+    width: 120px;
+    background-color: white;
+    z-index: 1000;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    transition: all 0.5s;
+}
+
+.open_left_menu .mini_height_block_left_menu {
+    left: 0;
+}
+
+.button_for_drop_left_menu {
+    z-index: 1000;
+}
+
+.open_left_menu .center_lm{
+    display: none;
+}
+
+.open_left_menu .top_lm{
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.open_left_menu .bottom_lm{
+    transform: rotate(-45deg);
+    bottom: 8px;
+}
+
+.soc_login_block,
+.first_login_form,
+.registr_block_index {
+    display: none;
+    z-index: 1001;
+}
+
+.soc_login_block .socila_block_registration {
+    width: 840px;
+}
+
+.soc_login_block .second_block_social_block_reg {
+    padding: 0;
+    width: 48%;
+}
+
+.soc_login_block .first_block_social_block_reg {
+    width: 50%;
+}
+
+.soc_login_block .in_second_block_scblreg {
+    width: 93%;
+}
+
+.mini_block_reg_soc {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #dfdfdf;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini_block_reg_soc:hover {
+    box-shadow: inset 0px 0px 150px rgba(0,0,0,0.05);
+}
+
+.third_block_social_block_reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini_block_reg_soc img {
+    width: 50%;
+}
+
+.first_login_form .in_second_block_scblreg {
+    height: auto;
+}
+
+.first_login_form .second_block_social_block_reg {
+    display: flex;
+    align-items: center;
+}
+
+.blue_btn_for_reg_forms {
+    width: 100%;
+    height: 60px;
+    border-radius: 8px;
+    color: white;
+    background-color: #2949F0;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.block_with_inputs_for_creating_podcast {
+    width: 100%;
+    margin-left: 20px;
+    height: 340px;
+}
+
+.mini_cr_podcast_select {
+    width: 49%;
+    border: 1.5px solid #E2E2E2;
+    border-radius: 8px;
+    background-color: white;
+    padding: 20px;
+}
+
+.block_with_inputs_for_creating_podcast input,
+.block_with_inputs_for_creating_podcast textarea {
+    width: 100%;
+    border: 1.5px solid #E2E2E2;
+    border-radius: 8px;
+    background-color: white;
+    padding: 20px;
+}
+
+.mini_cr_podcast {
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.big_cr_podcast {
+    height: 155px;
+    resize: none;
+    position: relative;
+    margin-bottom: 18px;
+    top: 3px;
+}
+
+.obv_last_top_drop_menu {
+    display: flex;
+    position: relative;
+}
+
+
+.drop_menu_last_info {
+    display: none;
+}
+
+
+.drop_last_menu_on .drop_menu_last_info {
+    display: block;   
+}
+
+.drop_last_menu_on .blackbglolindex {
+    display: block;
+}
+
+.logined .obv_last_top_drop_menu img {
+    display: block;
+}
+
+.obv_last_top_drop_menu img {
+    display: none;
+}
+
+.blackbglolindex {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.drop_menu_last_info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 501;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+
+.h_span_cr_podcast {
+    width: 100%;
+    font-size: 18px;
+    color: #707070;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.social_media_for_create_podcast {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.soc_mini_box_cr_podcast_menu {
+    font-display: flex;
+}
+
+.go_podcast {
+    width: 100%;
+    background-color: #F12D2E;
+    border: 0;
+    height: 80px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.advancid_setings {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    align-items: center;
+}
+
+.advancid_setings img{
+    width: 15px;
+    position: relative;
+    top: 3px;
+    left: 10px;
+}
+
+.buttons_vibor_cr_podcasts {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my_alert {
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+
+.my_alert_block {
+    width: 90%;
+    height: 90px;
+    background-color: red;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+/* dwaaaaaaaaaaaaaaaaaad////////////////awdaw-----------------------------------d/aw/d */
+
+.ios7-switch {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+}
+
+.ios7-switch input {
+    opacity: 0;
+    position: absolute;
+}
+
+.ios7-switch input + span {
+    position: relative;
+    display: inline-block;
+    width: 1.65em;
+    height: 1em;
+    background: white;
+    box-shadow: inset 0 0 0 0.0625em #e9e9e9;
+    border-radius: 0.5em;
+    vertical-align: -0.15em;
+    transition: all 0.40s cubic-bezier(.17,.67,.43,.98);
+}
+
+.ios7-switch:active input + span,
+.ios7-switch input + span:active {
+    box-shadow: inset 0 0 0 0.73em #e9e9e9;
+}
+
+.ios7-switch input + span:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0.875em;
+    height: 0.875em;
+    border-radius: 0.4375em;
+    top: 0.0625em;
+    left: 0.0625em;
+    background: white;
+    box-shadow: inset 0 0 0 0.03em rgba(0,0,0,0.1),
+                0 0 0.05em rgba(0,0,0,0.05),
+                0 0.1em 0.2em rgba(0,0,0,0.2);
+    transition: all 0.25s ease-out;
+}
+
+.ios7-switch:active input + span:after,
+.ios7-switch input + span:active:after {
+    width: 1.15em;
+}
+
+.ios7-switch input:checked + span {
+    box-shadow: inset 0 0 0 0.73em #4cd964;
+}
+
+.ios7-switch input:checked + span:after {
+    left: 0.7125em;
+}
+
+.ios7-switch:active input:checked + span:after,
+.ios7-switch input:checked + span:active:after {
+    left: 0.4375em;
+}
+
+/* accessibility styles */
+.ios7-switch input:focus + span:after {
+    box-shadow: inset 0 0 0 0.03em rgba(0,0,0,0.15),
+                0 0 0.05em rgba(0,0,0,0.08),
+                0 0.1em 0.2em rgba(0,0,0,0.3);
+    background: #fff;
+}
+
+.ios7-switch input:focus + span {
+    box-shadow: inset 0 0 0 0.0625em #dadada;
+}
+
+.ios7-switch input:focus:checked + span {
+    box-shadow: inset 0 0 0 0.73em #33be4b;
+}
+
+/* reset accessibility style on hover */
+.ios7-switch:hover input:focus + span:after {
+    box-shadow: inset 0 0 0 0.03em rgba(0,0,0,0.1),
+                0 0 0.05em rgba(0,0,0,0.05),
+                0 0.1em 0.2em rgba(0,0,0,0.2);
+    background: #fff;
+}
+
+.ios7-switch:hover input:focus + span {
+    box-shadow: inset 0 0 0 0.0625em #e9e9e9;
+}
+
+.ios7-switch:hover input:focus:checked + span {
+    box-shadow: inset 0 0 0 0.73em #4cd964;
+}
+
+
+/* dwaaaaaaaaaaaaaaaaaad////////////////awdaw-----------------------------------d/aw/d */
